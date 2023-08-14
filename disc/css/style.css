@@ -1,0 +1,613 @@
+* {
+    margin: 0%;
+    font-family: 'Poppins';
+   
+    
+}
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+body.active{
+   overflow-y: scroll;
+   scroll-behavior: smooth;
+}
+
+/* utility class */
+
+
+.op {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(34, 33, 37);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    flex-direction: column;
+    
+    animation: gone 2s ease-in-out 1.9s  ;
+    animation-iteration-count: 1;
+    
+    animation-fill-mode: both;
+
+}
+.op.non-active {
+    opacity: 0%;
+    
+    transition: all 0;
+    -webkit-transition: all 0;
+    -moz-transition: all 0;
+    -ms-transition: all 0;
+    -o-transition: all 0;
+    scale: 0;
+}
+.op .border h1{
+    color: white;
+    font-size: 300px;
+}
+.border {
+    
+    animation-fill-mode: both;
+}
+.letter1 {
+    animation: wave 2.5s  ease-in-out;
+    animation-delay: 0.2s;
+    transform-origin: bottom center;
+    display: inline-block;
+    font-size: 9em;
+    color: white;
+    font-weight: 700;
+    animation-fill-mode: both;
+  }
+  .letter2 {
+    animation: wave 2.5s  ease-in-out;
+    animation-delay: 0.3s;
+    transform-origin: bottom center;
+    display: inline-block;
+    font-size: 9em;   
+     color: white;
+     font-weight: 700;
+    animation-fill-mode: both;
+
+
+  }
+  .letter3 {
+    animation: wave 2.5s  ease-in-out;
+    animation-delay: 0.4s;
+    transform-origin: b0ttom center;
+    display: inline-block;
+    font-size: 9em;
+    color: white;
+    font-weight: 700;
+    animation-fill-mode: both;
+    
+  }
+  .letter4 {
+    animation: wave 2.5s  ease-in-out;
+    animation-delay: 0.5s;
+    transform-origin: bottom center;
+    display: inline-block;
+    font-size: 9em;    
+    color: white;
+    font-weight: 700;
+    animation-fill-mode: both;
+
+
+  }
+  .letter5 {
+    animation: wave 2.5s  ease-in-out;
+    animation-delay: 0.6s;
+    transform-origin: bottom center;
+    display: inline-block;
+    font-size: 9em;
+    color: white;
+    font-weight: 700;
+    animation-fill-mode: both;
+
+
+  }
+  .letter6 {
+    animation:   wave 2.5s  ease-in-out;
+    animation-delay: 0.7s;
+    transform-origin: bottom center;
+    display: inline-block;
+    font-size: 9em;
+    color: white;
+    font-weight: 700;
+    animation-fill-mode: both;
+
+
+  }
+  .barrier1 {
+      width: 100%;
+      height: 50%;
+      background-color: rgb(34, 33, 37);
+      position: absolute;
+      bottom: 55%;
+      z-index: 2;
+      
+  }
+  .barrier2 {
+    width: 100%;
+    height: 45%;
+    background-color: rgb(34, 33, 37);
+    position: absolute;
+    top: 60%;
+    z-index: 2;
+    
+
+}
+.barrier1.gone{
+    scale: 0;
+}
+.barrier2.gone{
+    scale: 0;
+}
+
+@keyframes wave {
+      
+    0% {
+      transform: translateY(200%) ;
+    }
+    25% {
+      transform: translateY(20%) ;
+
+    }
+    
+    85%{
+        transform: translateY(-55%);
+        
+    }
+    100%{
+        transform: translateY(-90%);
+    }
+  }
+
+  @keyframes up {
+    0% {
+        transform: translateY(200%);
+    }
+    25% {
+      transform: translateY(20%);
+  }
+  50% {
+      transform: translateY(-3%);
+  }
+  100% {
+      transform: translateY(-200%);
+  }
+}
+@keyframes ups {
+    0% {
+        transform: translateY(140%);
+    }
+  70% {
+      transform: translateY(15%);
+  }
+  100% {
+      transform: translateY(0%);
+  }
+}
+@keyframes gone {
+     0%{
+         transform: translateY(0%);
+     }
+     45%{
+         transform: scale(1);
+         transform: translateY(-100%);
+     }
+     90%{
+         transform: scale(1);
+     }
+     100%{
+        transform: translateY(-140%);
+     }
+    
+     
+
+     
+}
+@keyframes decor{
+    0% {
+         transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(100%);
+   }
+}
+
+@keyframes decordown{
+    0% {
+         transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(-100%);
+   }
+}
+@keyframes barrier{
+    100%{
+        transform: scale(0.01);
+    }
+}
+@keyframes about{
+  0%{
+      transform: translateY(50%);
+  }
+  100% {
+      transform: translateY(-10%);
+  }
+}
+
+@keyframes me{
+    0%{
+        transform: translateY(250%);
+    }
+    100% {
+        transform: translateY(-10%);
+    }
+  }
+
+.navbar {
+    width: 100vw;
+    height: 10vh;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    
+}
+
+.navbar.scrolling-active {
+    background-color: black;
+    padding: 30px 0 30px 0;
+    
+}
+.menu.scrolling-active li {
+ color: white;
+}
+.navbar-brand {
+    width: 30%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-item{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+/* ul adalah unordered list yaitu sebuah list yang hanya memakai . - dan lainnya 
+sedangnkan OL adalah ordered list dimana memakai nomor untuk membuat list nya */
+ ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    
+}
+li{
+   margin-right: 2vw;
+    width: 6vw;
+    height: 4.5vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+/* HERO-1 */
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(247, 247, 247);
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    scroll-behavior: smooth;
+    
+}
+.area-title{
+    width: 50vw;
+    height: 90vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    animation: ups 2s ease-in-out;
+    animation-delay: 1.5s;
+    z-index: 1;
+
+}
+.area-image{
+    width: 50vw;
+    height: 90vh;
+    align-items: center;
+    display: flex;
+    animation: ups 2s ease-in-out;
+    animation-delay: 1.5s;
+    z-index: 1;
+    
+
+    
+}
+.hover{
+    z-index: -1;
+    background-color: white;
+    width: 6%;
+    height: 10%;
+   
+    border: rgb(172, 172, 172) 2px solid;
+    border-radius: 70%;
+    position: absolute;
+}
+
+
+.display:hover .hover {
+    z-index: 10;
+    opacity: 1;
+   background-color:white;
+   width: 6%;
+   height: 10%;
+   border: rgb(34, 33, 37) 2px solid;
+   border-radius: 100%;
+  
+   text-align: center;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   
+    animation: glow 3s infinite;
+    position: absolute;
+    transition: all 0.4s ease;
+    content: '';
+    
+    
+}
+.display:hover .hover h5{
+    text-decoration: none;
+    color: rgb(34, 33, 37);
+    z-index: 11;
+}
+@keyframes glow {
+    0%,100%{
+        box-shadow: 
+        0 0 10px rgb(241, 241, 241,0.8),
+        0 0 20px rgb(241, 241, 241, 0.6),
+        0 0 40px rgb(241, 241, 241, 0.2);
+    }
+
+    50%{
+        box-shadow: 
+        0 0 30px rgb(241, 241, 241,0.8),
+        0 0 60px rgb(241, 241, 241, 0.6),
+        0 0 80px rgb(241, 241, 241, 0.2);
+    }
+}
+
+
+.title{
+    color: black;
+     z-index: 1;
+     font-size: 1.5rem;
+    
+}
+.p{
+    color: rgb(32, 32, 32);
+    font: 600;
+    z-index: 1;
+}
+.buttons{
+margin-top: 15%;
+}
+button {
+    background-color: white;
+    padding: 15px 25px 15px 15px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition:all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    font-family: "Poppins";
+   font-weight: 600;
+   border: rgb(34, 33, 37) 2px solid;
+}
+.decoration{
+    position: absolute;
+    z-index: 0;
+    width: 200vw;
+    height: 20vh;
+    top: 20%;
+    
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 100%;
+    z-index: 0;
+    animation: decor 20s infinite alternate ease-in-out both;
+    
+    
+}
+.decoration h1{
+    color: rgb(34, 33, 37);
+    opacity: 0.6;
+    font-size: 200px;
+
+}
+.decdown{
+    display: flex;
+    flex-direction: row;
+    top: 45%;
+    width: 200vw;
+    height: 20vh;
+    position: absolute;
+    z-index: 0;
+    animation: decordown 20s infinite alternate ease-in-out both;
+    right: 100%;
+}
+.decdown h1 {
+    color: white;
+    opacity: 0.6;
+    text-shadow: 
+    5px 5px 0 rgb(34, 33, 37),
+    -5px 5px 0 rgb(34, 33, 37),
+    -5px -5px 0 rgb(34, 33, 37),
+    5px -5px 0 rgb(34, 33, 37);
+    
+    font-size: 200px;
+   
+}
+button a {
+     color: black;
+     text-decoration: none;
+}
+.btn {
+    border-radius: 30px;
+    background-color: white;
+    padding: 15px 25px 15px 15px;
+ margin-right: 10%;
+ text-align: center;
+ justify-content: center;
+ display: flex;
+}
+button:hover{
+    padding: 15px 25px 15px 15px;
+    border-radius: 22px;
+    scale: 1.2;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition:all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    
+}
+.image-brand {
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.image-brand img {
+    width: 20%;
+    height: 20%;
+    border-radius: 15px;
+    scale: 3;
+    border: black 2px solid;
+    z-index: 0;
+}
+/* hero-2 */
+
+.second-slide{
+    z-index: 0;
+    width: 100vw;
+    background-color: white;
+    height: 100vh;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    z-index: 2;
+}
+.display{
+    width: 95%;
+    height: 90%;
+    background-color: white;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: rgb(43, 43, 43) 10px solid;
+}
+.con-about{
+  
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  
+
+}
+.con-about h1{
+  margin-right: 10%;
+  margin-top: 5%;
+  transform: translateY(50%);
+  font-size: 25rem;
+  color: rgb(34, 33, 37);
+
+}
+.con-about.active h1{
+    animation: about 0.7s ease-in-out  1 both;
+  
+}
+.con-about h5{
+    color: white;
+    margin-right: 70%;
+    font-size: 20px;
+    color: rgb(34, 33, 37);
+}
+.con-about.active h5{
+    animation: me 3s ease-in-out  1 both;
+
+}
+
+.con-me{
+    
+    width:100%;
+    height: 50%;
+    row-gap: 62%;
+    display: flex;
+  align-items: center;
+  flex-direction: row;
+   margin-top: 5%;
+   
+  }
+  .con-me h1{
+      margin-left: 36%;
+      font-size: 30rem;
+      color: rgb(34, 33, 37);
+      
+      
+  }
+  .con-me.active h1{
+    animation: about 0.7s ease-in-out  1 both;
+    
+
+    
+}
+  .con-me h4{
+      color: white;
+      margin-left: 5%;
+      color: rgb(34, 33, 37);
+  }
+  .con-me.active h4{
+    animation: me 3s ease-in-out  1 both;
+    
+}
+
+.about{
+    color: white;
+    font-size: 180px;
+}
+
+.me{
+    color: white;
+    font-size: 200px;
+}
