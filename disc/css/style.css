@@ -309,6 +309,9 @@ li a{
     text-decoration: none;
     color: black;
 }
+li:hover a {
+    text-decoration: underline;
+}
 /* HERO-1 */
 .hero{
     width: 100vw;
