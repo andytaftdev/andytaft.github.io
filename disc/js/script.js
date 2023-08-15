@@ -42,9 +42,21 @@ document.addEventListener("mousemove", (e) => {
   let y = e.pageY + -50;
   
   const hover = document.querySelector(".display:hover .hover")
+  
 
   hover.style.top = y + "px" ;
   hover.style.left = x + "px" ;
 
 });
 
+document.addEventListener("mousemove", (e) => {
+  let x = e.pageX + -10;
+  let y = e.pageY + -10;
+  
+  const hover = document.querySelector("#")
+  
+
+  hover.style.top = y + "px" ;
+  hover.style.left = x + "px" ;
+
+});

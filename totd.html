@@ -2,16 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .card-area{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .card{
+            background-color: beige;
+           padding: 10px;
+           margin: 10px;
+
+
+        }
+
+        @media screen and (max-width: 767px) {
+            .card-area{
+            grid-template-columns: auto ;
+        }
+        .container{
+        background-color: aqua;
+        }
+        }
+    </style>
 </head>
 <body>
-    <div class="hero">
-        <div class="title">
-        
-        </div>
-        <div class="image">
-
+    <div class="container">
+        <div class="card-area">
+            <div class="card">
+                <h1>card 1</h1>
+            </div>
+            <div class="card">
+                <h1>card 1</h1>
+            </div>
+            <div class="card">
+                <h1>card 1</h1>
+            </div>
+            <div class="card">
+                <h1>card 1</h1>
+            </div>
+            <div class="card">
+                <h1>card 1</h1>
+            </div>
+            <div class="card">
+                <h1>card 1</h1>
+            </div>
         </div>
     </div>
 </body>

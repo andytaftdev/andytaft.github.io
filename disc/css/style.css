@@ -1,7 +1,7 @@
 * {
     margin: 0%;
     font-family: 'Poppins';
-   
+    
     
 }
 body {
@@ -614,3 +614,107 @@ button:hover{
     color: white;
     font-size: 200px;
 }
+/* third slide */
+
+.third-slide{
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+    overflow-y: hidden;
+}
+.third-slide .container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #3F65D7;
+
+}
+.third-slide .container h1 {
+    font-size: 7rem;
+}
+.third-slide .container .area {
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    height: 85%;
+}
+.third-slide .container .area .area-image-3{
+    height: 100%;
+    width: 40%;
+   
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    max-height: 100%;
+
+}
+.third-slide .container .area .area-image-3 img {
+    transform: translateY(80%);
+    transition: all 0.6s ease-in-out;
+    opacity: 0.2;
+    position: relative;
+    cursor: default;
+   
+}
+.third-slide .container .area .area-image-3 img:hover {
+    transform: translateY(5%);
+    opacity: 1;
+   
+}
+.area-text-3{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.area-text-3 .title {
+    height: 100%;
+    width: 80%;
+   
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.area-text-3 .title  h2{
+    font-size: 3rem;
+   font-weight: 700;
+}
+.area-text-3 .title p{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.area-text-3 .title .container {
+    height: 60%;
+    row-gap: 40px;
+    width: 45%;
+    align-items: start;
+}
+.area-text-3 .title .container button {
+    border-radius: 50px;
+}
+.area-text-3 .rigth {
+    height: 100%;
+    width: 20%;
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.area-text-3 .rigth i {
+    scale: 4;
+    color: rgb(34, 33, 37);
+}
+
+
+
